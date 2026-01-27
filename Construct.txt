@@ -1,0 +1,46 @@
+Construct
+
+- Autenticação com níveis de acesso
+- Docker *
+
+-> Gerente
+	- Cadastrar produtos
+	- Liberar descontos
+	- Estornar venda
+	- Cadastrar cliente
+	- Realizar venda
+	- Emitir relatórios
+	- realizar orçamento
+	- Criar etiqueta produto
+	- Liberar crédito
+	- Aceitar devolução
+
+-> Vendedor
+	- Cadastrar cliente
+	- Realizar venda
+	- Consultar estoque
+	- Sinalizar para o gerente
+	- Ver comissões
+	- Realizar orçamento
+
+-> Caixa
+	- Abrir caixa
+	- Fechar caixa
+	- Finalizar compra
+	- Fluxo de caixa
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
