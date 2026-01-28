@@ -1,0 +1,13 @@
+.fundo {
+    background-color: #121212;
+    color: white;
+}
+
+.bg-nav {
+    background-color: #191919;
+    border-bottom: 1px solid gray;
+}
+
+.bg-hr {
+    background-color: gray;
+}
