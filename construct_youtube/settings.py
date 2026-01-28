@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "usuarios",
+    "rolepermissions",
 ]
 
 MIDDLEWARE = [
@@ -108,3 +109,6 @@ STATIC_URL = "static/"
 
 # Config auth
 AUTH_USER_MODEL = "usuarios.Users"
+
+# Role Permissions
+ROLEPERMISSIONS_MODULE = "construct_youtube.roles"
