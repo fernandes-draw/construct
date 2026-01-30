@@ -59,19 +59,23 @@
 
     <hr style="background-color: gray;">
     <div class="listar_produtos">
-      {% for produto in produtos %}
-        <div class="card" style="width: 18rem; background-color: lightgray; color: black">
-          {% if produto|get_first_image %}
-            <img width="100%" src="{{produto|get_first_image}}" class="card-img-top" alt="...">
-          {% endif %}
-          <div class="card-body">
-            <h5 class="card-title">{{produto.nome}}</h5>
-            <span class="badge badge-info">{{produto.categoria}}</span>
-            <br>
-            <a href="#" class="btn btn-primary mt-2">Acessar</a>
+      <div class="row">
+        {% for produto in produtos %}
+          <div class="col-md">
+            <div class="card" style="width: 15rem; background-color: lightgray; color: black;">
+              {% if produto|get_first_image %}
+                <img width="100%" src="{{produto|get_first_image}}" class="card-img-top" alt="...">
+              {% endif %}
+              <div class="card-body">
+                <h5 class="card-title">{{produto.nome}}</h5>
+                <span class="badge badge-info">{{produto.categoria}}</span>
+                <br>
+                <a href="#" class="btn btn-primary mt-2">Acessar</a>
+              </div>
+            </div>
           </div>
-        </div>
-      {% endfor %}
+        {% endfor %}
+      </div>
     </div>
   </div>
 

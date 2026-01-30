@@ -9,8 +9,10 @@ import sys
 from django.shortcuts import redirect
 from django.urls import reverse
 from django.contrib import messages
+from rolepermissions.decorators import has_permission_decorator
 
 
+@has_permission_decorator("cadastrar_produtos")
 def add_produto(request):
     if request.method == "GET":
         categorias = Categoria.objects.all()
